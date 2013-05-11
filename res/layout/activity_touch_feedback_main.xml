@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TouchFeedbackMainActivity"
+    android:gravity="center"
+    >
+
+    <com.arpitonline.touchfeedback.FeedbackEnabledViewGroup 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dip"
+ 		android:background="@drawable/touch_selector"
+ 		android:clickable="true"       
+        
+        >
+        
+        <View
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:text="@string/name" 
+        android:id="@+id/img"
+        android:background="#cccccc"
+        android:layout_marginRight="10dip"/>
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/name" 
+        android:id="@+id/name"
+        android:layout_toRightOf="@id/img"
+        android:layout_alignTop="@id/img"
+        />
+        
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/blog" 
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"/>
+        
+    </com.arpitonline.touchfeedback.FeedbackEnabledViewGroup>
+    
+    
+
+</RelativeLayout>
